@@ -7,3 +7,162 @@
 }
 
 /* Write CSS code below */
+
+.main-content {
+    display: grid;
+    min-height: 1000px;
+    margin: 20px auto;
+    width: 90%;
+    grid-template-columns: 300px 700px;
+}
+
+.left-section {
+    grid-column: span 1;
+    background-color: #242531;
+}
+
+.right-section {
+    grid-column: span 1 / span 2;
+    background-color: #f7f7f7;
+}
+
+.left-content {
+    padding: 1rem;
+}
+
+.profile-image {
+    width: 60%;
+    /* height: 110.42px; */
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    color: white;
+}
+
+.designation {
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    color: aqua;
+}
+
+.description {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.icon {
+    list-style: none;
+}
+
+.icon a {
+    text-decoration: none;
+    color: purple
+}
+
+.personal-details li {
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.personal-details li i {
+    color: purple;
+}
+
+.skills {
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+
+.skills-title {
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.skill-name {
+    font-size: 0.65rem;
+    /* font-weight: 0.65rem; */
+    text-align: left;
+    padding-bottom: 0.5rem;
+    color: white;
+}
+
+
+/* .skill-progress {
+    height: 4px;
+} */
+
+.progress-bar {
+    border: 1px solid white;
+    height: 4px;
+    background-color: white;
+}
+
+.skill-item {
+    margin-bottom: 1rem;
+}
+
+.right-main-content {
+    padding: 2rem 3rem;
+}
+
+.right-main-content h3 {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.right-main-content section {
+    margin-bottom: 2rem;
+}
+
+.right-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.education-content,
+.experience-content,
+.projects-content {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    row-gap: 20px;
+}
+
+.edu-content-right,
+.exp-content-right,
+.proj-content-right {
+    padding-left: 25px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+@media screen and (max-width:673px) {
+    .main-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
